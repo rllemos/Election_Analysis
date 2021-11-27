@@ -48,10 +48,14 @@ The results are expected to confirm that the output to the terminal matches the 
         Winning Vote Count: 272,892
         Winning Percentage: 73.8%
 
-## Results as recorded in my election_analysis.txt file
+## Results as recorded in my election_analysis.txt file:
 
 ![my analysis](./Images/Screen_Shot_2021-11-27.png)
 
 
 
 ## Election_Audit Python Code Summary:
+The python code provided is "robust" and can be used for any state wide election given the follow:
+1. First, a separate csv file is neeeded for each election
+2. Second, need to create a separate election analysis txt file to record results
+3. Third, the candidates or counties are not "Hard-wired" to the code therefore it can be used for any state wide elections
