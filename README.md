@@ -75,38 +75,38 @@ The analysis of the election show that:
 
 ## Python Code:
 
-    # Add our dependencies.
-    import csv
-    import os
+        # Add our dependencies.
+        import csv
+        import os
 
-    # Add a variable to load a file from a path.
-    file_to_load = os.path.join(".", "Resources", "election_results.csv")
-    # Add a variable to save the file to a path.
-    file_to_save = os.path.join(".","Analysis", "election_analysis.txt")
+        # Add a variable to load a file from a path.
+        file_to_load = os.path.join(".", "Resources", "election_results.csv")
+        # Add a variable to save the file to a path.
+        file_to_save = os.path.join(".","Analysis", "election_analysis.txt")
 
-    # Initialize a total vote counter.
-    total_votes = 0
+        # Initialize a total vote counter.
+        total_votes = 0
 
-    # Candidate Options and candidate votes.
-    candidate_options = [] # initialize a list
-    candidate_votes = {}  # initialize a dictionary
+        # Candidate Options and candidate votes.
+        candidate_options = [] # initialize a list
+        candidate_votes = {}  # initialize a dictionary
 
-    # 1: Create a county list and county votes dictionary.
-    county_names = []
-    county_votes = {}
+        # 1: Create a county list and county votes dictionary.
+        county_names = []
+        county_votes = {}
 
-    # Track the winning candidate, vote count and percentage
-    winning_candidate = ""
-    winning_count = 0
-    winning_percentage = 0
+        # Track the winning candidate, vote count and percentage
+        winning_candidate = ""
+        winning_count = 0
+        winning_percentage = 0
 
-    # 2: Track the largest county and county voter turnout.
-    largest_county_turnout = ""
-    largest_county_vote = 0
+        # 2: Track the largest county and county voter turnout.
+        largest_county_turnout = ""
+        largest_county_vote = 0
 
-    # Read the csv and convert it into a list of dictionaries
-    with open(file_to_load) as election_data:
-    reader = csv.reader(election_data)
+        # Read the csv and convert it into a list of dictionaries
+        with open(file_to_load) as election_data:
+        reader = csv.reader(election_data)
 
     # Read the header
     header = next(reader)
