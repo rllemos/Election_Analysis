@@ -71,7 +71,7 @@ The analysis of the election show that:
 
 ## Results as recorded in my election_analysis.txt file:
 
-![my analysis](./Images/Screen_Shot_2021-11-27.png)
+![my analysis](./Images/election_results_txt.png)
 
 ## Python Code:
 
@@ -154,7 +154,7 @@ The analysis of the election show that:
     # I have iterated over all rows in the cvs file (all votes)
 
     # Save the results to our text file.
-with open(file_to_save, "w") as txt_file:
+    with open(file_to_save, "w") as txt_file:
 
     # Print the final vote count (to terminal)
     election_results = (
