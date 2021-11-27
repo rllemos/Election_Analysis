@@ -2,7 +2,7 @@
 
 
 # Python_Election_Analysis
-Analysis of election results using python to read in a csv file and provide the following deliverables:
+Purpose of this challenge is to analyze election results using python to read in a csv file and provide the following deliverables:
 
 1. The Election Results Printed to the Command line
 2. The Election Results Saved to a Text File
@@ -38,8 +38,17 @@ The results are expected to confirm that the output to the terminal matches the 
 
 ## Election_Audit Results:
 The analysis of the election show that:
-
-
+- There were a total of 369,711 cast in this election.
+- The candidates were:
+    * Charles Casper Stockham
+    * Diana DeGette
+    * Raymon Anthony Doane
+- The candidate results were:
+    * Charles Casper Stockham: 23.0% (85,213)
+    * Diana DeGette: 73.8% (272,892)
+    * Raymon Anthony Doane: 3.1% (11,606)
+- The winner of the election was:
+    Diana DeGette: 73.8% (272,892)
 
 ### Specified "Asks":
 >* How many votes were cast in this congressional election?
@@ -64,19 +73,7 @@ The analysis of the election show that:
 
 ![my analysis](./Images/Screen_Shot_2021-11-27.png)
 
-
-
-## Election_Audit Python Code Summary:
-The python code provided can be used for any state wide election given the follow:
-# -*- coding: UTF-8 -*-
-"""PyPoll Election Analysis Challenge."""
-# The data requested by the stakeholder:
-# 1. the total number of votes cast
-# 2. a complete list of candidates who received votes
-# 3. the percentage of votes each candidate won
-# 4. the total number of votes each candidate won
-# 5. the winner of the electiob based on popular vote
-
+## Python Code:
 
 # Add our dependencies.
 import csv
@@ -249,6 +246,10 @@ with open(file_to_save, "w") as txt_file:
 
     # Save the winning candidate's name to the text file
     txt_file.write(winning_candidate_summary)
-1. First, a separate csv file is neeeded for each election
-2. Second, need to create a separate election analysis txt file to record results
-3. Third, the candidates or counties are not "Hard-wired" to the code therefore it can be used for any state wide elections
+
+## Election_Audit Python Code Summary:
+The python code provided can be used for any state wide election given the follow:
+
+1. First, a separate csv file is neeeded for each election.
+2. Second, a separate election analysis txt file will need to be created to record results.
+3. Third, the candidates or counties are not "Hard-wired" to the code therefore it can be used for any state wide elections.
